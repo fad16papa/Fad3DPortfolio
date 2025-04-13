@@ -1,5 +1,6 @@
 import React from "react";
 import { words } from "../constants/index.js";
+import Button from "../components/Button.jsx";
 
 const Hero = () => {
   return (
@@ -36,7 +37,9 @@ const Hero = () => {
             </div>
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
               Hi, I'm Francis, A full stack software engineer based in Singapore with a passion for building modern solutions.
-              </p>
+            </p>
+            <Button className='md:w-80 md:h-16 w-60 h-12' id='button' text='See my Works'>
+            </Button>
           </div>
         </header>
         {/* {RIGHT: HERO CONTENT} */}

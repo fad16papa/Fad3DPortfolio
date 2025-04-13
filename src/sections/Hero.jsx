@@ -34,6 +34,9 @@ const Hero = () => {
               <h1>into Real Projects</h1>
               <h1>that Deliver Results</h1>
             </div>
+            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
+              Hi, I'm Francis, A full stack software engineer based in Singapore with a passion for building modern solutions.
+              </p>
           </div>
         </header>
         {/* {RIGHT: HERO CONTENT} */}

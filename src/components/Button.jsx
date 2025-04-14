@@ -1,9 +1,4 @@
-/**
- * A reusable CTA button component.
- * When clicked, it scrolls smoothly to the section with ID "counter",
- * with a small offset from the top for better visual placement.
- */
-
+import React from "react";
 const Button = ({ text, className, id }) => {
     return (
       <a className={`${className ?? ""} cta-wrapper`} // Add base + extra class names

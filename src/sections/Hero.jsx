@@ -1,6 +1,7 @@
 import React from "react";
 import { words } from "../constants/index.js";
 import Button from "../components/Button.jsx";
+import HeroExperience from "../components/HeroModels/HeroExperience.jsx";
 
 const Hero = () => {
   return (
@@ -18,16 +19,17 @@ const Hero = () => {
                 <span className="slide">
                   <span className="wrapper">
                     {words.map((word) => (
-                      <span key={word.text} className="flex items-center md:gap-3 gap-1 pb-2">
-                        <img 
-                            src={word.imgPath} 
-                            alt={word.text} 
-                            className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
-                            />
-                        <span>
-                            {word.text}
-                        </span>
-                      </span>      
+                      <span
+                        key={word.text}
+                        className="flex items-center md:gap-3 gap-1 pb-2"
+                      >
+                        <img
+                          src={word.imgPath}
+                          alt={word.text}
+                          className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
+                        />
+                        <span>{word.text}</span>
+                      </span>
                     ))}
                   </span>
                 </span>
@@ -36,13 +38,22 @@ const Hero = () => {
               <h1>that Deliver Results</h1>
             </div>
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I'm Francis, A full stack software engineer based in Singapore with a passion for building modern solutions.
+              Hi, I'm Francis, A full stack software engineer based in Singapore,{" "}
+              <br /> with a passion for building modern cutting edge solutions.
             </p>
-            <Button className='md:w-80 md:h-16 w-60 h-12' id='button' text='See my Works'>
-            </Button>
+            <Button
+              className="md:w-80 md:h-16 w-60 h-12"
+              id="button"
+              text="See my Works"
+            ></Button>
           </div>
         </header>
         {/* {RIGHT: HERO CONTENT} */}
+        <figure>
+          <div className="hero-3d-layout">
+            <HeroExperience />
+          </div>
+        </figure>
       </div>
     </section>
   );
